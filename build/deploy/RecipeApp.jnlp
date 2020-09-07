@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="RecipeApp.jnlp">
+  <information>
+    <title>RecipeApp</title>
+    <vendor>Chris Toeller</vendor>
+    <description>RecipeApp</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="RecipeApp.jar" size="49123" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="application.RecipeAppJavaFXML"  name="RecipeApp" />
+  <update check="background"/>
+</jnlp>

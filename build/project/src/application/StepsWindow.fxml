@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StepsWindowController">
+   <top>
+      <BorderPane prefHeight="46.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="Recipe Steps" BorderPane.alignment="CENTER">
+               <effect>
+                  <Blend />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveRecipeSteps" text="Save" BorderPane.alignment="CENTER" />
+         </center>
+         <right>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#closeWindow" text="Cancel" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </right>
+         <left>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </bottom>
+   <center>
+      <TableView fx:id="stepsTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="stepNumberColumn" prefWidth="60.0" text="Step" />
+          <TableColumn fx:id="instructionsColumn" prefWidth="539.0" text="Instructions" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
